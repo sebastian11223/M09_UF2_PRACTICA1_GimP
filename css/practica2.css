@@ -1,0 +1,723 @@
+body {
+    margin: 0;
+}
+html {
+    font-family: Verdana, Tahoma, sans-serif;
+}
+/* cabecera de la web */
+header {
+    width: 100%;
+}
+/* barra de navegación */
+#navBar {
+    position: sticky;
+    top: 0;
+    background-color: black;
+    width: 100%;
+    color: white;
+    float: right;
+    z-index: 1;
+}
+/* texto barra de navegación */ 
+.textNavBar {
+    float: right;
+    padding-right: 3%; 
+} 
+.textNavBar:hover {
+    float: right;
+    padding-right: 3%;
+    text-decoration: underline;
+}
+/* div texto del header */
+#divTextHeader {
+    position: absolute;
+    left: 10%;
+    top: 40%;
+}
+/* texto del header */
+.textHeader {
+    color: white;
+    font-weight: normal;
+}
+.textHeader > span {
+    font-weight: bold;
+}
+/* div imagen del header */
+#divImageHeader img {
+    width: 100%;
+    height: 100%;
+    background-color:aqua ;
+}
+/* imagen del header */
+#imageHeader {
+    width: 100%;
+    height: 100%;
+}
+#divLOGOS {
+    display: flex;
+}
+#imagePNG {
+    width: 20%;
+}
+#imageSVG {
+}
+/* div sobre nosotros */
+#aboutUs {
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 5%;
+    margin-bottom: 10%;
+}
+#aboutUsContainer {
+    width: 100%;
+}
+/* div imagen párrafo */
+.divImgParagraph1 {
+    width: 30%;
+    float: left;
+    padding-right: 2.5%;
+}
+/* div imagen párrafo */
+.divImgParagraph2 {
+    width: 30%;
+    float: right;
+    padding-left: 2.5%;
+}
+/* imagen párrafo */
+.imgParagraph {
+    width: 100%;
+    border-radius: 10px;
+}
+/* texto párrafo */
+.textParagraph1 {
+    padding-bottom: 5%;
+}
+/* texto párrafo 2*/
+.textParagraph2 {
+    text-align: right;
+}
+/* barra de menú  */
+#menuTitle{
+    background-color: rgb(25, 5, 117);
+    text-align: center;
+    color: white;
+    padding: 1.5%;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+/* div carta menú */
+#menu {
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 5%;
+    margin-bottom: 7.5%;
+}
+/* contenedor para grid */
+.menuContainer {
+    width: 100%;
+    display: grid;
+    grid-template-areas: 
+    'divMenuX divContentsX divContentsX'
+    'divMenuX divImageMenuX1 divImageMenuX2';
+    grid-gap: 2%;
+    padding-bottom: 2.5%;
+}
+/* div menú lateral */
+.divMenu {
+    border: 2px solid rgba(23, 16, 29, 0.334);
+    grid-area: divMenuX;
+    display: flex;
+    align-items: center;
+}
+.divMenu > p {
+    padding-left: 50px;
+    padding-right: 50px;
+    font-weight: bold;
+}
+/* div contenido + parrafo */
+.divContents {
+    grid-area: divContentsX;
+    padding-bottom: 5%;
+}
+.divContents > p:first-child {
+    font-weight: bold;
+    font-size: 1.25em;
+}
+/* ocultamos elementos solo visibles en resolución 768 y 576px */
+.foodTags1 {
+   display: none;
+}
+.foodTags2 {
+    display: none;
+ }
+ .foodTags3 {
+    display: none;
+ }
+ .foodTags4 {
+    display: none;
+ }
+.foodTags1 > p {
+    display: none;
+}
+.foodTags2 > p {
+    display: none;
+}
+.foodTags3 > p {
+    display: none;
+}
+.foodTags4 > p {
+    display: none;
+}
+/* div para imagen de menú */
+.divImageMenu {
+    width: 95%;
+}
+.divImageMenu > img:first-child {
+    width: 100%;
+    grid-area: divImageMenuX1;
+    border: 5px solid whitesmoke;
+    border-radius: 5px;
+}
+.divImageMenu > img:last-child {
+    width: 100%;
+    grid-area: divImageMenuX2;
+    border: 5px solid whitesmoke;
+    border-radius: 5px;
+}
+/* div galería de imágenes */
+#gallery {
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+/* div conjunto de imágenes */
+#divsGallery {
+    display: flex;
+    gap: 1.6%;
+    justify-content: center; 
+    flex-wrap: wrap;
+}
+/* div para imagen ensalada */
+.divImageSalad {
+    justify-content: center;
+    padding-top: 1.5%;
+}
+.divImageSalad > img {
+    width: 203px;
+    border: 5px double;
+    border-radius: 5px;
+    border-color: whitesmoke;
+}
+.divImageSalad:hover > img {
+    width: 203px;
+    border: 5px double ;
+    border-color: whitesmoke;
+    filter: brightness(0.50);
+    box-shadow: 0px 0px 2px 2px rgba(79, 168, 241, 0.668);
+}
+#divsGallery > .divImageSalad:nth-child(4n) > img  {
+    width: 203px;
+    border: 5px double ;
+    border-color: whitesmoke;
+    filter: brightness(0.50);
+}
+#divsGallery > .divImageSalad:nth-child(4n+1) > img  {
+    width: 203px;
+    border: 5px double ;
+    border-color: whitesmoke;
+    filter: brightness(0.50);
+}
+/* footer de la web */
+footer {
+    width: 100%;
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+}
+/* texto del footer */
+.infoContact {
+    display: flex;
+    color: white;
+    margin-right: 2.5%;
+    margin-left: 2.5%;
+    align-items: center;
+}
+footer > .infoContact:last-child {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+}
+/* iconos del footer */
+.iconContact {
+    margin-right: 5px;
+    padding-top: 5px;
+}
+/* texto contacto */
+.textContact {
+    white-space: nowrap;
+}
+
+/* hoja de estilos para resolución de 768px */
+@media only screen and (max-width: 768px) {
+    /* barra de navegación * - modificamos color barra */
+    #navBar {
+        position: sticky;
+        top: 0;
+        background-color: white;
+        width: 100%;
+        color: black;
+        float: right;
+        z-index: 1;
+    }
+    /* texto barra de navegación - modificamos posicion float */ 
+    .textNavBar {
+        float: left;
+        padding-left: 3%; 
+    }
+    .textNavBar:hover {
+        float: left;
+        padding-right: 3%;
+        text-decoration: underline;
+    } 
+    /* div texto del header - modificamos posicion texto imagen principal */
+    #divTextHeader {
+        position: absolute;
+        left: 10%;
+        top: 12%;
+    }
+    /* div texto del header - modificamos margin para ajustar interlineado */
+    #divTextHeader > h1 {
+        margin-bottom: 1%;
+    }
+    /* div texto del header - modificamos margin para ajustar interlineado */
+    #divTextHeader > p {
+        margin-top: 1%;
+    }
+    /* div sobre nosotros - modificamos márgenes */
+    #aboutUs {
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-top: 5%;
+        margin-bottom: 10%;
+    }
+    /* div sobre nosotros - modificamos tamaño H2 */
+    #aboutUs > h2 {
+     font-size: 2em;
+    }
+    /* div imagen párrafo - modificamos width */
+    .divImgParagraph1 {
+        width: 100%;
+    }
+    /* div imagen párrafo - modificamos width */
+    .divImgParagraph2 {
+        width: 100%;
+    }
+    /* texto párrafo - modificamos justificacion texto e interlineado */
+    .textParagraph1 {
+        text-align: justify;
+        line-height : 25px;
+    }
+    /* texto párrafo 2 - modificamos justificacion texto e interlineado  */
+    .textParagraph2 {
+        text-align: justify;
+        line-height : 25px;
+    }
+    /* div carta menú - modificamos márgenes */
+    #menu {
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-top: 5%;
+        margin-bottom: 7.5%;
+    }
+    /* div menú - modificamos tamaño H2 */
+    #menu > h2 {
+        font-size: 2em;
+       }
+    /* div barra de menú - modificamos padding para ancho de barra */
+    #menuTitle{
+        background-color: rgb(25, 5, 117);
+        text-align: center;
+        color: white;
+        padding: 1.5%;
+        font-weight: bold;
+        font-size: 1.1em;
+        padding-top: 3%;
+        padding-bottom: 3%;
+    }
+    /* contenedor para grid - modificamos estructura */
+    .menuContainer {
+        width: 100%;
+        display: grid;
+        grid-template-areas: 
+            'divMenuX divContentsX'
+            'divMenuX divImageMenuX1'
+            'divMenuX divImageMenuX2';
+        grid-gap: 2%;
+        padding-bottom: 10%;
+        }
+    /* modificamos padding lateral para ajustar ancho */
+    .divMenu > p {
+        padding-left: 1px;
+        padding-right: 1px;
+        font-weight: bold;
+    }
+    /* modificamos el tamaño del titulo 'Contenido' */
+    .divContents > p:first-child {
+        font-weight: bold;
+        font-size: 1.50em;
+    }
+    /* modificamos el interlineado del párrafo */
+    .divContents > p:last-child {
+        line-height: 25px;
+    }
+    /* div etiquetas comidas fotografías */
+    .foodTags1 {
+        position: absolute;
+        top: 2425px;
+        left: 166px;
+        width: 69%;
+        background-color: rgba(0, 0, 0, 0.5);
+        padding-top: 30px;
+        padding-bottom: 30px;
+        display: block;
+    }
+    .foodTags2 {
+        position: absolute;
+        top: 2728px;
+        left: 166px;
+        width: 69%;
+        background-color: rgba(0, 0, 0, 0.5);
+        padding-top: 30px;
+        padding-bottom: 30px;
+        display: block;
+    }
+    .foodTags3 {
+        position: absolute;
+        top: 3351px;
+        left: 166px;
+        width: 69%;
+        background-color: rgba(0, 0, 0, 0.5);
+        padding-top: 30px;
+        padding-bottom: 30px;
+        display: block;
+    }
+    .foodTags4 {
+        position: absolute;
+        top: 3654px;
+        left: 166px;
+        width: 69%;
+        background-color: rgba(0, 0, 0, 0.5);
+        padding-top: 30px;
+        padding-bottom: 30px;
+        display: block;
+    }
+    /* párrafo etiquetas comidas */
+    .foodTags1 > p {
+        color: white;
+        font-size: 1.75em;
+        text-align: center;
+        margin: 0;
+        display: block;
+    }
+    .foodTags2 > p {
+        color: white;
+        font-size: 1.75em;
+        text-align: center;
+        margin: 0;
+        display: block;
+    }
+    .foodTags3 > p {
+        color: white;
+        font-size: 1.75em;
+        text-align: center;
+        margin: 0;
+        display: block;
+    }
+    .foodTags4 > p {
+        color: white;
+        font-size: 1.75em;
+        text-align: center;
+        margin: 0;
+        display: block;
+    }
+    /* div para imagen de menú - modificamos margen */
+    .divImageMenu {
+        width: 100%;
+    }
+    /* div galería de imágenes - modificamos márgenes */
+    #gallery {
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+    /* div galería de imágenes - modificamos tamaño H2 */
+    #gallery > h2 {
+        font-size: 2em;
+       }
+    /* div conjunto de imágenes - modificamos gap */
+    #divsGallery {
+        display: flex;
+        gap: 15%;
+        justify-content: center; 
+        flex-wrap: wrap;
+    }
+    /* texto del footer - modificamos contenido centro */
+    footer > .infoContact {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+}
+
+/* hoja de estilos para resolución de 576px */
+@media only screen and (max-width: 576px) {
+    /* barra de navegación * - modificamos color barra */
+    #navBar {
+        position: sticky;
+        top: 0;
+        background-color: white;
+        width: 100%;
+        color: black;
+        float: right;
+        z-index: 1;
+    }
+    /* texto barra de navegación - modificamos posicion float */ 
+    .textNavBar {
+        float: left;
+        padding-left: 3%; 
+    }
+    .textNavBar:hover {
+        float: left;
+        padding-right: 3%;
+        text-decoration: underline;
+    } 
+    /* div texto del header - modificamos posicion texto imagen principal */
+    #divTextHeader {
+        position: absolute;
+        left: 10%;
+        top: 12%;
+    }
+    /* div texto del header - modificamos margin para ajustar interlineado */
+    #divTextHeader > h1 {
+        margin-bottom: 1%;
+    }
+    /* div texto del header - modificamos margin para ajustar interlineado */
+    #divTextHeader > p {
+        margin-top: 1%;
+    }
+    /* div sobre nosotros */
+    #aboutUs {
+        margin-left: 2%;
+        margin-right: 2%;
+        margin-top: 5%;
+        margin-bottom: 10%;
+    }
+    /* div sobre nosotros - modificamos tamaño H2 */
+    #aboutUs > h2 {
+     font-size: 2em;
+     text-align: center;
+
+    }
+    /* div imagen párrafo - modificamos width */
+    .divImgParagraph1 {
+        width: 100%;
+    }
+    /* div imagen párrafo - modificamos width */
+    .divImgParagraph2 {
+        width: 100%;
+    }
+    /* texto párrafo - modificamos justificacion texto e interlineado */
+    .textParagraph1 {
+        text-align: justify;
+        line-height : 25px;
+    }
+    /* texto párrafo 2 - modificamos justificacion texto e interlineado  */
+    .textParagraph2 {
+        text-align: justify;
+        line-height : 25px;
+    }
+    /* div carta menú */
+    #menu {
+        margin-left: 2%;
+        margin-right: 2%;
+        margin-top: 5%;
+        margin-bottom: 7.5%;
+    }
+    /* div menú - modificamos tamaño H2 */
+    #menu > h2 {
+        font-size: 2em;
+        text-align: center;
+       }
+    /* barra de menú - ocultamos el elemento */
+    #menuTitle{
+        display: none;
+    }
+    /* contenedor para grid - modificamos estructura */
+    .menuContainer {
+        width: 100%;
+        display: grid;
+        grid-template-areas: 
+            'divMenuX' 
+            'divContentsX'
+            'divImageMenuX1'
+            'divImageMenuX2';
+        grid-gap: 2%;
+        padding-bottom: 12%;
+        }
+    /* modificamos padding lateral para ajustar ancho */
+    .divMenu > p {
+        font-weight: bold;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 3%;
+        padding-bottom: 3%;
+    }
+    /* modificamos el tamaño del titulo 'Contenido' y márgenes */
+    .divContents > p:first-child {
+        font-weight: bold;
+        font-size: 1.50em;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    /* modificamos el interlineado del párrafo y márgenes */
+    .divContents > p:last-child {
+        line-height: 25px;
+        margin-top: 0;
+    }
+    /* div etiquetas comidas fotografías */
+    .foodTags1 {
+        position: absolute;
+        top: 2268px;
+        left: 17px;
+        background-color: rgba(0, 0, 0, 0.5);
+        width: 95.6%;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        display: block;
+    }
+    .foodTags2 {
+        position: absolute;
+        top: 2585px;
+        left: 17px;
+        background-color: rgba(0, 0, 0, 0.5);
+        width: 95.6%;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        display: block;
+    }
+    .foodTags3 {
+        position: absolute;
+        top: 3261px;
+        left: 17px;
+        background-color: rgba(0, 0, 0, 0.5);
+        width: 95.6%;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        display: block;
+    }
+    .foodTags4 {
+        position: absolute;
+        top: 3576px;
+        left: 17px;
+        background-color: rgba(0, 0, 0, 0.5);
+        width: 95.6%;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        display: block;
+    }
+    /* párrafo etiquetas comidas */
+    .foodTags1 > p {
+        color: white;
+        font-size: 1.75em;
+        text-align: center;
+        margin: 0;
+        display: block;
+    }
+    .foodTags2 > p {
+        color: white;
+        font-size: 1.75em;
+        text-align: center;
+        margin: 0;
+        display: block;
+    }
+    .foodTags3 > p {
+        color: white;
+        font-size: 1.75em;
+        text-align: center;
+        margin: 0;
+        display: block;
+    }
+    .foodTags4 > p {
+        color: white;
+        font-size: 1.75em;
+        text-align: center;
+        margin: 0;
+        display: block;
+    }
+    /* div para imagen de menú */
+    .divImageMenu {
+        width: 100%;
+    }
+    /* div galería de imágenes - modificamos margin */
+    #gallery {
+        margin-left: 2%;
+        margin-right: 2%;
+        margin-top: 5%;
+        margin-bottom: 10%;
+    }
+    /* div galería de imágenes - modificamos tamaño H2 */
+    #gallery > h2 {
+        font-size: 2em;
+        text-align: center;
+       }
+    /* div conjunto de imágenes - modificamos gap */
+    #divsGallery {
+        display: flex;
+        gap: 15%;
+        justify-content: center; 
+        flex-direction: column;
+    }
+    /* div imágen ensalada - modificamos width imágenes*/
+    .divImageSalad > img {
+        width: 100%;
+        border: 5px double;
+        border-radius: 5px;
+        border-color: whitesmoke;
+    }
+    .divImageSalad:hover > img {
+        width: 100%;
+        border: 5px double ;
+        border-color: whitesmoke;
+        filter: brightness(0.50);
+        box-shadow: 0px 0px 2px 2px rgba(79, 168, 241, 0.668);
+    }
+    #divsGallery > .divImageSalad:nth-child(4n) > img  {
+        width: 100%;
+        border: 5px double ;
+        border-color: whitesmoke;
+        filter: brightness(0.50);
+    }
+    #divsGallery > .divImageSalad:nth-child(4n+1) > img  {
+        width: 100%;
+        border: 5px double ;
+        border-color: whitesmoke;
+        filter: brightness(0.50);
+    }
+    /* texto del footer - modificamos contenido centro */
+    footer > .infoContact {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        color: white;
+    }
+    /* texto del footer - ocultamos contenido nombre restaurante */
+    footer > .infoContact:last-child {
+        display: none;
+    }
+}
