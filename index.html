@@ -6,6 +6,8 @@
         <link rel="stylesheet" type="text/css" href="css/practica2.css">
         <link rel="shortcut icon" href="img/favicon.png"> <!-- icono Google -->
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="js/animaciones.js"></script>
     </head>
 
     <body>
@@ -36,7 +38,7 @@
                         <img id="imagePNG" src="img/LOGO.png" alt="logo">
                     </div>
                     <div>
-                        <svg width="300" height="400">
+                        <svg id="imageSVG" width="300" height="400">
                             <rect x="5" y="5" rx="10" ry="50" width="200" height="200"
                             style="fill:red;stroke:black;stroke-width:5;opacity:0.5"/>
                             <polygon points="100,10,198 190,78 10,7 160,198"
@@ -47,7 +49,7 @@
                         </svg>
                     </div>
                 </div>
-                <h2>Sobre nosotros</h2>
+                <h2 id="sobreNosotros">Sobre nosotros</h2>
                 <div id="aboutUsContainer">
                     <div class="divImgParagraph1">
                         <picture>

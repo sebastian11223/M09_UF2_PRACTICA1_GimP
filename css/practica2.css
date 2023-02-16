@@ -38,7 +38,21 @@ header {
 .textHeader {
     color: white;
     font-weight: normal;
+    opacity: 0;
+    animation-name: titulo;
+    animation-fill-mode: both;
+    animation-duration: 8s;
+    animation-delay: 4s;
+    animation-iteration-count: 1;
 }
+
+@keyframes titulo {
+    0% {opacity: 0;}
+    50% {opacity: 1;
+        color: orange;}
+    100% {opacity: 1; color: white;}
+}
+
 .textHeader > span {
     font-weight: bold;
 }
@@ -46,7 +60,6 @@ header {
 #divImageHeader img {
     width: 100%;
     height: 100%;
-    background-color:aqua ;
 }
 /* imagen del header */
 #imageHeader {
@@ -57,7 +70,7 @@ header {
     display: flex;
 }
 #imagePNG {
-    width: 20%;
+    width: 50%;
 }
 #imageSVG {
 }
