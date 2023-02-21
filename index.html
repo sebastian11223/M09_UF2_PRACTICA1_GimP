@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Práctica 1 - UF2</title>
+        <link rel="stylesheet" type="text/css" href="css/practica2.css">
+        <link rel="shortcut icon" href="img/favicon.png"> <!-- icono Google -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="js/animaciones.js"></script>
+    </head>
+
+    <body>
+        <!-- barra de navegación -->
+        <nav id="navBar">
+                <p class="textNavBar">Nosotros</p>
+                <p class="textNavBar">Carta</p>
+                <p class="textNavBar">Galería</p> 
+        </nav>
+        
+        <!-- imagen + texto header -->
+        <header>
+                <div id="divTextHeader">
+                    <h1 class="textHeader">Restaurante <span>Els Coberts</span></h1>
+                    <p class="textHeader">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+                <div id="divImageHeader">
+                    <img id="imageHeader" src="img/header.jpg" alt="restaurante">
+                </div>
+        </header>
+
+        <!-- cuerpo de la web -->
+        <main>
+            <!-- sobre nosotros -->
+            <section id="aboutUs">
+                <div id="divLOGOS">
+                    <div id="divLogoPNG">
+                        <img id="imagePNG" src="img/LOGO.png" alt="logo">
+                    </div>
+                    <div>
+                        <svg id="imageSVG" width="300" height="400">
+                            <rect x="5" y="5" rx="10" ry="50" width="200" height="200"
+                            style="fill:red;stroke:black;stroke-width:5;opacity:0.5"/>
+                            <polygon points="100,10,198 190,78 10,7 160,198"
+                            style="fill:pink;stroke:purple;stroke-width:5;fill-rule:evenodd;"/>
+                            <polygon points="7 160,198, 100,10,198 190,78 10"
+                            style="fill:pink;stroke:purple;stroke-width:5;fill-rule:evenodd;"/>
+                            <circle cx="90" cy="90" r="30" stroke="purple" stroke-width="4" fill="purple" />
+                        </svg>
+                    </div>
+                </div>
+                <h2 id="sobreNosotros">Sobre nosotros</h2>
+                <div id="aboutUsContainer">
+                    <div class="divImgParagraph1">
+                        <picture>
+                            <source media="(min-width:768px)" srcset="img/nosaltres1-768.jpeg">
+                            <source media="(min-width:576px)" srcset="img/nosaltres1-576.jpeg">
+                            <img class="imgParagraph" src="img/nosaltres1.jpeg" alt="sobre nosotros">
+                        </picture>  
+                    </div>
+                    <div class="textParagraph1">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto aperiam non cum commodi fugiat, 
+                        fugit sunt quis quia modi quos necessitatibus blanditiis, soluta quibusdam vel voluptas consequuntur 
+                        voluptatibus mollitia optio! Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis ea atque 
+                        ipsam voluptates cumque, porro ex nulla, nihil deleniti neque cupiditate deserunt optio. Quo hic fuga, 
+                        suscipit vero in esse.</p>
+                    </div>
+                </div>
+                
+                <div id="aboutUsContainer">
+                    <div class="divImgParagraph2">
+                        <picture>
+                            <source media="(min-width:768px)" srcset="img/nosaltres2-768.jpeg">
+                            <source media="(min-width:576px)" srcset="img/nosaltres2-576.jpeg">
+                            <img class="imgParagraph" src="img/nosaltres2.jpeg" alt="sobre nosotros">
+                           <!-- <img class="imgParagraph" src="img/nosaltres2.jpeg" alt="sobre nosotros"> -->
+                         </picture>  
+                    </div>
+                    <div class="textParagraph2">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto aperiam non cum commodi fugiat, 
+                        fugit sunt quis quia modi quos necessitatibus blanditiis, soluta quibusdam vel voluptas consequuntur 
+                        voluptatibus mollitia optio! Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis ea atque 
+                        ipsam voluptates cumque, porro ex nulla, nihil deleniti neque cupiditate deserunt optio. Quo hic fuga, 
+                        suscipit vero in esse.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- carta -->
+            <section id="menu">
+                <h2>Carta</h2>
+                <p id="menuTitle">Menú</p>
+                <!-- menu container 1 -->
+                <div class="menuContainer">
+                    <!-- menú lateral -->
+                    <div class="divMenu">
+                        <p>Menú 1</p>
+                    </div>
+                    <div class="divContents">
+                        <p>Contenido</p>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                            Asperiores deserunt officia odio totam id dolor tempore nisi at 
+                            quis a reici endis ipsa voluptates, quasi, quisquam ut laborum hic 
+                            iure aspernatur? Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Aperiam aspernatur laboriosam dolorem autem nisi deleniti alias minus non, 
+                            id veniam molestias necessitatibus labore vel voluptate quo, minima itaque 
+                            porro nesciunt. </p>
+                    </div>
+                    <div class="divImageMenu"><img src="img/menu_pasta.jpeg" alt="pasta"></div>
+                    <div class="foodTags1">
+                        <p>Pasta</p>
+                    </div>
+                    <div class="divImageMenu"><img src="img/menu_starter.jpeg" alt="entrante"></div>
+                    <div class="foodTags2">
+                        <p>Entrantes</p>
+                    </div>
+                </div>
+                <!-- menu container 2 -->
+                <div class="menuContainer">
+                    <div class="divMenu">
+                        <p>Menú 2</p>
+                    </div>
+                    <div class="divContents">
+                        <p>Contenido</p>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                            Asperiores deserunt officia odio totam id dolor tempore nisi at 
+                            quis a reici endis ipsa voluptates, quasi, quisquam ut laborum hic 
+                            iure aspernatur? Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Aperiam aspernatur laboriosam dolorem autem nisi deleniti alias minus non, 
+                            id veniam molestias necessitatibus labore vel voluptate quo, minima itaque 
+                            porro nesciunt.</p>
+                    </div>
+                    <div class="divImageMenu"><img src="img/menu_meat.jpeg" alt="carne"></div>
+                    <div class="foodTags3">
+                        <p>Carnes</p>
+                    </div>
+                    <div class="divImageMenu"><img src="img/menu_fish.jpeg" alt="pescado"></div>
+                    <div class="foodTags4">
+                        <p>Pescado</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- galería de imágenes -->
+            <section id="gallery">
+                <h2>Galería de imágenes</h2>
+                <div id="divsGallery">
+                    <div class="divImageSalad"><img src="img/img_salad.jpg" alt="salad"></div>
+                    <div class="divImageSalad"><img src="img/img_salad.jpg" alt="salad"></div>
+                    <div class="divImageSalad"><img src="img/img_salad.jpg" alt="salad"></div>
+                    <div class="divImageSalad"><img src="img/img_salad.jpg" alt="salad"></div>
+                    <div class="divImageSalad"><img src="img/img_salad.jpg" alt="salad"></div>
+                    <div class="divImageSalad"><img src="img/img_salad.jpg" alt="salad"></div>
+                    <div class="divImageSalad"><img src="img/img_salad.jpg" alt="salad"></div>
+                    <div class="divImageSalad"><img src="img/img_salad.jpg" alt="salad"></div>
+                </div>
+            </section>
+        </main>
+
+        <!-- pie de la web -->
+        <footer>
+            <div class="infoContact">
+                <div><img class="iconContact" src="img/ic_contact.jpeg" alt=""></div>
+                <p class="textContact">abcdefg@hijklmns.opq</p>
+            </div>
+            <div class="infoContact">
+                <div><img class="iconContact" src="img/ic_phone.jpeg" alt=""></div>
+                <p class="textContact">666 666 666</p>
+            </div>
+            <div class="infoContact">
+                <p class="textContact">Restaurante Els Coberts</p>
+            </div>
+        </footer>
+    </body>
+</html>
