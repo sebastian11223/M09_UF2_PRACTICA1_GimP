@@ -68,6 +68,7 @@ header {
 }
 #divLOGOS {
     display: flex;
+    margin: -40px;
 }
 #imagePNG {
     width: 50%;
